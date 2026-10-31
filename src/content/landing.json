@@ -1,0 +1,48 @@
+{
+  "appName": "RuneWorks Text-to-Speech",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Turn written words into natural spoken audio",
+      "subtitle": "Choose from a range of voices, clone your own, and generate full multi-speaker conversations on demand. No recording equipment, no voice actors, no waiting.",
+      "primaryCta": { "label": "Get started", "to": "/register" },
+      "secondaryCta": { "label": "Log in", "to": "/login" }
+    },
+    {
+      "type": "features",
+      "id": "benefits",
+      "title": "Why RuneWorks Text-to-Speech",
+      "subtitle": "High-quality voice generation that is affordable, reliable and straightforward to use.",
+      "items": [
+        { "icon": "mic", "title": "Natural-sounding speech", "text": "Clear, pleasant audio for narration, lessons, announcements and more, with adjustable speed, pitch and volume." },
+        { "icon": "copy", "title": "Voice cloning", "text": "Create a reusable voice from a recording you have permission to use, then apply it consistently across all your content." },
+        { "icon": "users", "title": "Multi-speaker conversations", "text": "Assign a voice to each participant, control pauses and overlaps, and export one recording or each line separately." },
+        { "icon": "coins", "title": "Affordable plans", "text": "Subscription allowances that suit small developers and businesses, with usage you can review at any time." },
+        { "icon": "folder", "title": "Projects and spaces", "text": "Organise scripts, speakers and recordings into projects, and share them with your team through spaces." },
+        { "icon": "shield", "title": "Private and secure", "text": "Your recordings, voices and generated audio stay private to your space, with retention periods you control." }
+      ]
+    },
+    {
+      "type": "steps",
+      "id": "how-it-works",
+      "title": "How it works",
+      "items": [
+        { "title": "Pick or create a voice", "text": "Use a preset voice or upload a recording to clone your own." },
+        { "title": "Write your script", "text": "Enter a single passage or a conversation between several speakers." },
+        { "title": "Generate and download", "text": "Receive audio as MP3, WAV or OGG, ready for your website, app or podcast." }
+      ]
+    },
+    {
+      "type": "audience",
+      "title": "Built for",
+      "items": ["Educational platforms", "Content creators and podcasters", "Independent developers", "Small businesses"]
+    },
+    {
+      "type": "cta",
+      "title": "Ready to hear your content?",
+      "subtitle": "Create a free account and generate your first recording in minutes.",
+      "primaryCta": { "label": "Create an account", "to": "/register" },
+      "secondaryCta": { "label": "Log in", "to": "/login" }
+    }
+  ]
+}
