@@ -42,7 +42,18 @@ export const api = {
     r<T.PageResult<T.Voice>>(`${sp(s)}/voices`, { query: q }),
   createVoice: (s: string, form: FormData) =>
     r<{ id: string; jobId: string; status: 'processing' }>(`${sp(s)}/voices`, { method: 'POST', form }),
-  updateVoice: (s: string, v: string, b: { name?: string; description?: string | null; settings?: T.VoiceSettings }) =>
+  updateVoice: (
+    s: string,
+    v: string,
+    b: {
+      name?: string;
+      description?: string | null;
+      gender?: T.Voice['gender'];
+      accent?: string | null;
+      language?: string;
+      settings?: T.VoiceSettings;
+    },
+  ) =>
     r<T.Voice>(`${sp(s)}/voices/${v}`, { method: 'PATCH', body: b }),
   voiceSample: (s: string, v: string) => r<Blob>(`${sp(s)}/voices/${v}/sample`, { blob: true }),
   deleteVoice: (s: string, v: string) => r<void>(`${sp(s)}/voices/${v}`, { method: 'DELETE' }),

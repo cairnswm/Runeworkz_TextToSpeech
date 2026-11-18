@@ -96,6 +96,10 @@ export interface Voice {
   status: VoiceStatus;
   hasSample: boolean;
   settings: VoiceSettings;
+  /** True for presets and for cloned voices shared with every space. */
+  isPublic: boolean;
+  /** True when the current space owns this cloned voice; always false for presets. */
+  isOwner: boolean;
   createdAt: ISODate;
 }
 
